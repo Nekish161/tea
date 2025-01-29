@@ -1,0 +1,118 @@
+.header {
+   padding-block: 30px 65px;
+
+   @media (max-width:1000px) {
+      padding-block: 30px;
+   }
+
+   @media (max-width:480px) {
+      padding-block: 10px;
+   }
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__logo{
+      @media (max-width:480px) {
+         width: 39px;
+         height: 56px;
+      }
+   }
+
+   &__nav{
+      @media (max-width:850px) {
+         display: none;
+      }
+   }
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 70px;
+
+      font-family: $first-family;
+      font-optical-sizing: auto;
+      font-size: 18px;
+      font-style: normal;
+
+      @media (max-width:1000px) {
+         gap: 65px;
+      }
+
+   }
+
+   &__icon-wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+
+      @media (max-width:1000px) {
+         gap: 50px;
+      }
+
+      @media (max-width:360px) {
+         gap: 20px;
+      }
+
+   }
+
+   &__shop-login-wrapper {
+      display: flex;
+      gap: 20px;
+   }
+
+   &__burgermenu{
+      display: none;
+
+      &:hover{
+         opacity: 0.5;
+      }
+
+      &:active{
+         opacity: 0.8;
+      }
+
+      @media (max-width:850px) {
+         display: block;
+         width: 60px;
+         height: 40px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+   }
+
+   &__burgermenu-wrapper{
+      width: 40px;
+      height: 2px;
+      background-color: $blackfont;
+
+      position: relative;
+
+      &::after{
+         content: '';
+         display: block;
+         width: 40px;
+      height: 2px;
+      background-color: $blackfont;
+      position: absolute;
+      top: 10px;
+      }
+
+      &::before{
+         content: '';
+         display: block;
+         width: 40px;
+      height: 2px;
+      background-color: $blackfont;
+      position: absolute;
+      bottom: 10px;
+      }
+
+   }
+
+}

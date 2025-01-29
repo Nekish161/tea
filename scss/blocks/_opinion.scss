@@ -1,0 +1,82 @@
+.opinion {
+   padding-block: 60px;
+
+   background-color: $whitemilk;
+
+   @media (max-width:643px) {
+      padding-block: 50px;
+   }
+
+   &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+   }
+
+   &__comments-wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 26px;
+
+      @media (max-width:768px) {
+         flex-wrap: wrap;
+      }
+
+      @media (max-width:643px) {
+         gap: 20px;
+      }
+
+   }
+
+   &__comments {
+      max-width: 280px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      @media (max-width:1000px) {
+         &:nth-child(4){
+            display: none;
+         }
+      }
+
+      @media (max-width:768px) {
+         &:nth-child(4){
+            display:initial;
+         }
+      }
+
+      @media (max-width:643px) {
+         max-width: 220px;
+      }
+
+      @media (max-width:479px) {
+
+         max-width: 100%;
+
+         &:nth-child(4){
+            display: none;
+         }
+
+         &:nth-child(3){
+            display: none;
+         }
+      }
+
+      &-text {
+         font-family: $first-family;
+         font-style: italic;
+         font-weight: 300;
+         font-size: 16px;
+      }
+
+      &-autor {
+         font-family: $first-family;
+         font-weight: 600;
+         font-size: 20px;
+      }
+   }
+}

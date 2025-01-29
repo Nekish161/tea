@@ -1,0 +1,15 @@
+@import 'reset';
+@import 'variables';
+@import 'core';
+@import 'fonts';
+@import 'mixins';
+@import 'templates';
+
+@import './blocks/header';
+@import './blocks/welcome';
+@import './blocks/collection';
+@import './blocks/opinion';
+@import './blocks/blog';
+@import './blocks/form';
+@import './blocks/prioritise';
+@import './blocks/footer'

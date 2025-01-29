@@ -1,0 +1,51 @@
+.container{
+   max-width: 1240px;
+   margin: 0 auto;
+   padding: 0 20px;
+
+   @media (max-width:600px) {
+      padding: 0 10px
+   }
+
+}
+
+body{
+   font-weight: 400;
+   color: $blackfont;
+}
+
+.section__title{
+   font-family: $second-family;
+font-size: 40px;
+
+@media (max-width:426px) {
+         font-size: 24px;
+}
+
+}
+
+.btn {
+   padding: 12px 41px;
+   border: 1px solid $blackfont;
+
+   font-family: $first-family;
+   font-weight: 300;
+   font-size: 20px;
+   background-color: white;
+
+   &:hover {
+      opacity: 0.5;
+   }
+
+   &:active {
+      opacity: 0.8;
+   }
+}
+
+a:hover{
+   opacity: 0.5;
+}
+
+a:active{
+   opacity: 0.8;
+}

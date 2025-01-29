@@ -1,0 +1,138 @@
+.form {
+   padding-block: 100px;
+
+   background-image: url(../../assets/img/form-bg.webp);
+   background-repeat: no-repeat;
+   background-color: $whitemilk;
+   background-position: right bottom;
+
+   @media (max-width: 1230px) {
+      padding-block: 60px;
+   }
+
+   @media (max-width: 620px) {
+      padding-block: 50px;
+   }
+
+   
+   @media (max-width: 520px) {
+      background-image: none;
+   }
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+
+      @media (max-width: 1230px) {
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+         gap: 60px;
+      }
+
+      @media (max-width: 520px) {
+         gap: 30px;
+      }
+   }
+
+   &__decs-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      font-family: $first-family;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.5;
+
+      @media (max-width: 1230px) {
+         max-width: 780px;
+      }
+
+      @media (max-width: 817px) {
+         max-width: 640px;
+      }
+
+      @media (max-width: 520px) {
+         font-size: 13px;
+         gap: 30px;
+      }
+   }
+
+   &__input-wrapper {
+      align-self: flex-end;
+
+      @media (max-width: 1230px) {
+         max-width: 580px;
+         align-self: center;
+      }
+
+      @media (max-width: 620px) {
+         max-width: 460px;
+      }
+   }
+
+   &__input {
+      display: flex;
+      gap: 25px;
+
+      @media (max-width:400px) {
+         gap: 0;
+      }
+
+   }
+
+   &__input-style {
+      background-color: transparent;
+
+      font-family: $first-family;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.5;
+      color: #b8b58b;
+
+      border-bottom: 1px solid #b8b58b;
+      width: 439px;
+
+      @media (max-width: 620px) {
+         width: 324px;
+      }
+
+      @media (max-width: 479px) {
+         width: auto;
+         display: flex;
+      }
+
+      @media (max-width: 360px) {
+         width: 205px;
+      }
+
+   }
+
+   &__mail {
+      align-self: flex-end;
+   }
+
+   &__checkbox-text {
+      margin-top: 12px;
+
+      font-family: $first-family;
+      font-weight: 300;
+      font-size: 13px;
+
+      @media (max-width: 1230px) {
+         text-align: left;
+      }
+   }
+
+   &__btn{
+      @media (max-width:479px) {
+         margin-left: auto;
+      }
+   }
+
+   p > input {
+      margin-right: 10px;
+   }
+}
